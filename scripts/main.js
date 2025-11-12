@@ -5,14 +5,14 @@ let ReportItemButton = document.getElementById("ReportItemButton")
 
 
 AddItemButton.addEventListener("click", (c) => {
-    console.log("add item")
+    console.log("add item");
+    chrome.tabs.create({ url: "pages/add_item.html" });
 })
 ViewItemButton.addEventListener("click", (c) => {
-    console.log("add item")
+    console.log("open item");
+    chrome.tabs.create({ url: "pages/view_item.html" });
 })
 SearchItemButton.addEventListener("click", (c) => {
-    console.log("add item")
-})
-ReportItemButton.addEventListener("click", (c) => {
-    console.log("add item")
+    console.log("search item");
+    chrome.tabs.create({ url: "pages/search_item.html" });
 })
