@@ -4,6 +4,12 @@ let SearchItemButton = document.getElementById("SearchItemButton")
 let ReportItemButton = document.getElementById("ReportItemButton")
 let FeedbackButton = document.getElementById("FeedbackButton")
 
+let clothingList = [
+    "White Shirt",
+    "Pants",
+    "Nike Hoodie"
+] // use grover's algorithm quantum search to achieve O(sqrt(n)) time complexity
+
 AddItemButton.addEventListener("click", (c) => {
     console.log("add item");
     chrome.tabs.create({ url: "pages/add_item.html" });
