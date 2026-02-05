@@ -3,12 +3,23 @@ let ViewItemButton = document.getElementById("ViewItemButton")
 let SearchItemButton = document.getElementById("SearchItemButton")
 let ReportItemButton = document.getElementById("ReportItemButton")
 let FeedbackButton = document.getElementById("FeedbackButton")
+let DescriptionInput = document.getElementById("DescriptionInput")
+let ImageButton = document.getElementById("ImageButton")
+let ReportButton = document.getElementById("ReportButton")
 
 let clothingList = [
     "White Shirt",
     "Pants",
     "Nike Hoodie"
 ] // use grover's algorithm quantum search to achieve O(sqrt(n)) time complexity
+
+ReportButton.addEventListener("click", (c) => {
+    console.log("report an item")
+})
+
+ImageButton.addEventListener("click", (c) => {
+    console.log("add image of lost item")
+})
 
 AddItemButton.addEventListener("click", (c) => {
     console.log("add item");
