@@ -6,6 +6,7 @@ let FeedbackButton = document.getElementById("FeedbackButton")
 let DescriptionInput = document.getElementById("DescriptionInput")
 let ImageButton = document.getElementById("ImageButton")
 let ReportButton = document.getElementById("ReportButton")
+let SupportButton = document.getElementById("SupportButton")
 
 let clothingList = [
     "White Shirt",
@@ -39,4 +40,8 @@ SearchItemButton.addEventListener("click", (c) => {
 FeedbackButton.addEventListener("click", (c) => {
     console.log("feedback");
     chrome.tabs.create({ url: "pages/feedback.html" });
+})
+
+SupportButton.addEventListener("click", (c) => {
+    console.log(" call the knowco")
 })
