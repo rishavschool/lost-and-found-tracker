@@ -6,6 +6,7 @@ let FeedbackButton = document.getElementById("FeedbackButton")
 let DescriptionInput = document.getElementById("DescriptionInput")
 let ImageButton = document.getElementById("ImageButton")
 let ReportButton = document.getElementById("ReportButton")
+let TranslationButton = document.getElementById("TranslationButton")
 let SupportButton = document.getElementById("SupportButton")
 
 let clothingList = [
@@ -44,4 +45,8 @@ FeedbackButton.addEventListener("click", (c) => {
 
 SupportButton.addEventListener("click", (c) => {
     console.log(" call the knowco")
+})
+
+TranslationButton.addEventListener("click", (c) => {
+    console.log("Trnslate to various languages such as mandarin, spanish, latin, etc.")
 })
