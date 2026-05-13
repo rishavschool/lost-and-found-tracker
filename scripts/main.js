@@ -8,6 +8,7 @@ let ImageButton = document.getElementById("ImageButton")
 let ReportButton = document.getElementById("ReportButton")
 let TranslationButton = document.getElementById("TranslationButton")
 let SupportButton = document.getElementById("SupportButton")
+let ReportButton = document.getElementById("ReportButton")
 
 let clothingList = [
     "White Shirt",
@@ -49,4 +50,8 @@ SupportButton.addEventListener("click", (c) => {
 
 TranslationButton.addEventListener("click", (c) => {
     console.log("Trnslate to various languages such as mandarin, spanish, latin, etc.")
+})
+
+ReportButton.addEventListener("click", () => {
+    console.log("Report a bugto us")
 })
